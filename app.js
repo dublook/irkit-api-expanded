@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.get('/regza/volume/up/:delta', function(req, res) {
+app.post('/regza/volume/up/:delta', function(req, res) {
   var delta = req.params.delta;
   res.send({
     "requestedAction": "regza-volume-up",
