@@ -23,3 +23,8 @@ Resources:
           Properties:
             Path: /regza/volume/up/{delta}
             Method: post
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /regza/volume/down/{delta}
+            Method: post
